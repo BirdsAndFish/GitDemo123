@@ -15,6 +15,8 @@
 
 @property (nonatomic, strong) TestClass *testClass;
 
+- (void)sayHello;
+
 @end
 
 @implementation ViewController
@@ -29,10 +31,15 @@
     NSLog(@"The Result is:%d",self.sum);
 }
 
+- (void)sayHello {
+    NSLog(@"Hello");
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    [self sayHello];
 }
 
 
